@@ -6,7 +6,7 @@ def deal_card
   rand(1..11)
 end
 
-def display_card_total
+def display_card_total(card_total)
   puts "Your cards add up to #{card_total}"
 end
 
@@ -19,15 +19,23 @@ def get_user_input
 end
 
 def end_game(card_total)
-  puts 
+  puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
 def initial_round
-  # code #initial_round here
+  card1 = deal_card
+  card2 = deal_card
+  sum = display_card_total(card1 + card2)
 end
 
-def hit?
-  # code hit? here
+def hit?(card_total)
+  prompt_user
+  input = get_user_input
+  if input == 's'
+    break
+  elsif input == 'h'
+    card = deal_card
+    car
 end
 
 def invalid_command
