@@ -11,7 +11,8 @@ def display_card_total
 end
 
 def prompt_user
-  gets
+  puts 
+  gets.chomp
 end
 
 def get_user_input
